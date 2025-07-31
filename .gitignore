@@ -1,0 +1,11 @@
+# IntelliJ / Java IDE files
+.idea/
+*.iml
+
+# Java build output
+/out/
+/target/
+
+# OS-specific
+.DS_Store
+Thumbs.db

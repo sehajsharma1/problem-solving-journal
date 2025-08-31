@@ -1,2 +1,21 @@
-# problem-solving-journal
-A personal journal of solved coding challenges from LeetCode, HackerRank, and other platforms. Focused on data structures, algorithms, and interview preparation
+# Problem Solving Journal
+
+## Build
+
+```sh
+mvn clean package
+```
+
+## Deploy
+
+```sh
+mvn deploy
+```
+
+## Run
+
+```sh
+java -jar target/problem-solving-journal-1.0.0.jar
+```
+
+`

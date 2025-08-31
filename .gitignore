@@ -1,11 +1,18 @@
-# IntelliJ / Java IDE files
-.idea/
-*.iml
-
-# Java build output
-/out/
 /target/
-
-# OS-specific
+*.iml
+*.class
+.idea/
+*.log
 .DS_Store
-Thumbs.db
+*.jar
+*.war
+*.ear
+```
+````
+
+---
+
+**Next steps:**  
+- Move your Java code (if any) into `src/main/java/com/example/problemsolvingjournal/`.
+- Run `mvn spring-boot:run` to start the application.  
+- Add controllers, services, etc. as needed.

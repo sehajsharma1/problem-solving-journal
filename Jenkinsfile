@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'maven:3.9.11-eclipse-temurin-21-alpine' } }
+    agent any
     stages {
         stage('build') {
             steps {
@@ -8,12 +8,8 @@ pipeline {
             }
         }
         stage('deploy') {
-            steps {
-                withCredentials([string(credentialsId: 'GITHUB_TOKEN', variable: 'GITHUB_TOKEN')]) {
-                    sh '''
-                        mvn deploy -Dgithub.token=$GITHUB_TOKEN
-                    '''
-                }
+           steps {
+                sh 'mvn deploy'
             }
         }
     }

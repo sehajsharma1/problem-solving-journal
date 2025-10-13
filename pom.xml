@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.ocean</groupId>
     <artifactId>problem-solving-journal</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
     <name>Problem Solving Journal</name>
     <parent>
@@ -32,6 +32,13 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
@@ -39,7 +46,6 @@
         <repository>
             <id>github</id>
             <url>https://maven.pkg.github.com/sehajsharma1/ocean</url>
-            <!-- Authentication handled via GITHUB_TOKEN in Jenkins -->
         </repository>
     </distributionManagement>
 </project>

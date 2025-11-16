@@ -1,0 +1,33 @@
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+  datasource:
+    # Use HikariCP as the DataSource implementation
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/urlshortener
+    username: urlusr
+    password: hello123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      pool-name: HikariPool-URLShortener
+      maximum-pool-size: 10
+      minimum-idle: 2
+      connection-timeout: 30000    # ms
+      idle-timeout: 600000         # ms
+      max-lifetime: 1800000        # ms
+      validation-timeout: 5000     # ms
+      initialization-fail-timeout: -1
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  redis:
+    host: localhost
+    port: 6379
+
+server:
+  port: 8080
+
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+
+  <!-- Force Spring Boot to use ANSI color output -->
+  <property name="CONSOLE_LOG_PATTERN"
+            value="%d{yyyy-MM-dd HH:mm:ss.SSS} %clr(%-5level){INFO=green, WARN=yellow, ERROR=red} [%thread] %clr(%logger{36}){blue} - %clr(%msg){blue}%n"/>
+
+  <!-- Enable Spring Boot color converters -->
+  <conversionRule conversionWord="clr"
+                  converterClass="org.springframework.boot.logging.logback.ColorConverter"/>
+  <conversionRule conversionWord="wex"
+                  converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter"/>
+
+  <!-- Console Appender -->
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+      <charset>UTF-8</charset>
+    </encoder>
+  </appender>
+
+  <!-- Root Logger -->
+  <root level="INFO">
+    <appender-ref ref="CONSOLE"/>
+  </root>
+
+</configuration>

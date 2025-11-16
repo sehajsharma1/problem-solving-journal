@@ -7,17 +7,17 @@ pipeline {
                 script {
                     env.COMMIT_ID = sh(script: "git rev-parse --short HEAD", returnStdout: true).trim()
                     env.BRANCH_NAME = env.BRANCH_NAME ?: sh(script: "git rev-parse --abbrev-ref HEAD", returnStdout: true).trim()
-                    env.IMAGE_TAG = "${env.BRANCH_NAME}-${env.BUILD_NUMBER}-${env.COMMIT_ID}"
+                    env.IMAGE_TAG = "problem-solving-journal-${env.BRANCH_NAME}-${env.BUILD_NUMBER}-${env.COMMIT_ID}"
                     echo "IMAGE_TAG: ${env.IMAGE_TAG}"
                 }
             }
         }
-        stage('code build') {
+        stage('Code Build') {
             steps {
                 sh 'mvn clean install'
             }
         }
-        stage('build docker image') {
+        stage('Build Image') {
             steps {
                 script {
                     def app = docker.build(
@@ -30,10 +30,11 @@ pipeline {
                 }
             }
         }
-        stage('deploy to github package') {
+        stage('Upload To Github Package') {
             steps {
                 sh 'mvn deploy'
             }
         }
     }
 }
+

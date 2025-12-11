@@ -9,4 +9,10 @@ Leetcode:
 * A transition `0 → >0` indicates the start of a merged interval, and `>0 → 0` marks its end.
 * Best used when the numeric range is known and reasonably small, making it memory-efficient.
 
+### 📌 **Formula Used (Exponentiation by Squaring)**
+
+- If `n < 0`: `x^n = 1 / x^{-n}`
+- If `n` is even: `x^n = (x^{n/2})^2`
+- If `n` is odd: `x^n = x * x^{n-1}`
 ---
+

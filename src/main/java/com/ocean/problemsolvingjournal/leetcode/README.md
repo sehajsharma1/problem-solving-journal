@@ -14,5 +14,8 @@ Leetcode:
 - If `n < 0`: `x^n = 1 / x^{-n}`
 - If `n` is even: `x^n = (x^{n/2})^2`
 - If `n` is odd: `x^n = x * x^{n-1}`
+
+XOR cancels duplicates because a ^ a = 0, so all paired numbers become zero and only the unique number remains.
+
 ---
 

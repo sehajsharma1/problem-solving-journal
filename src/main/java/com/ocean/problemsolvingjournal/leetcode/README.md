@@ -1,7 +1,5 @@
 Leetcode:
 
----
-
 ### 📌 Prefix Marking Technique
 
 * Mark each interval with `+1` at the start and `-1` at `(end + 1)` in an auxiliary array.
@@ -11,11 +9,22 @@ Leetcode:
 
 ### 📌 **Formula Used (Exponentiation by Squaring)**
 
-- If `n < 0`: `x^n = 1 / x^{-n}`
-- If `n` is even: `x^n = (x^{n/2})^2`
-- If `n` is odd: `x^n = x * x^{n-1}`
+- If `n < 0`: `x^n = 1 / x^{-n}`.
+- If `n` is even: `x^n = (x^{n/2})^2`.
+- If `n` is odd: `x^n = x * x^{n-1}`.
 
 XOR cancels duplicates because a ^ a = 0, so all paired numbers become zero and only the unique number remains.
 
----
+Two intervals [a₁, a₂] and [b₁, b₂] overlap iff a₁ ≤ b₂ and a₂ ≥ b₁.
+
+<p align="left">
+  <img src="images/DFS vs BFS.png" alt="DFS vs BFS" width="400" />
+</p>
+
+Preorder  : Visit Root → Traverse Left → Traverse Right.
+
+Inorder   : Traverse Left → Visit Root → Traverse Right.
+
+Postorder : Traverse Left → Traverse Right → Visit Root.
+
 

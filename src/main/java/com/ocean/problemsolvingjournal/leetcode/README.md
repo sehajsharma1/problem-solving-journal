@@ -27,4 +27,18 @@ Inorder   : Traverse Left → Visit Root → Traverse Right.
 
 Postorder : Traverse Left → Traverse Right → Visit Root.
 
+Backtracking is an algorithmic problem-solving technique where a solution is built step by step by trying all possible choices, and whenever a choice leads to an invalid state or a completed solution, the algorithm reverses (backtracks) that choice to explore other options. For example, while generating all letter combinations for a phone number like "23", the algorithm picks 'a' for 2, then tries 'd', 'e', 'f' for 3 to form "ad", "ae", "af", and after each combination, it removes the last letter and tries the next one, ensuring all valid combinations are explored efficiently.
 
+backtrack(state):
+if state is a valid solution:
+record answer
+return
+
+    for each possible choice:
+        make the choice
+        backtrack(new state)
+        undo the choice
+
+Try → Recurse → Backtrack
+
+(r / 3) * 3 + (c / 3) gives the index (0–8) of the 3×3 Sudoku box a cell belongs to, where rows choose the box row and columns choose the box column.

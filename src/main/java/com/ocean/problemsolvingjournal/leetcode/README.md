@@ -42,3 +42,19 @@ return
 Try → Recurse → Backtrack
 
 (r / 3) * 3 + (c / 3) gives the index (0–8) of the 3×3 Sudoku box a cell belongs to, where rows choose the box row and columns choose the box column.
+
+```md
+## 8 Directions in a 2D Grid
+
+Each cell in a 2D array has 8 neighbors (horizontal, vertical, and diagonal).
+The direction arrays store relative row and column offsets: `-1` (up/left), `0` (same), `+1` (down/right).
+Combining these offsets gives all adjacent cells except the center `(0,0)`.
+`newRow = row + rowDir[i]` and `newCol = col + colDir[i]` move to each neighbor.
+This pattern is widely used in DFS/BFS grid problems.
+```
+
+```md
+Kadane's Algorithm:
+Keep adding numbers while the sum is positive.
+If it becomes negative, restart — and remember the best sum found.
+```

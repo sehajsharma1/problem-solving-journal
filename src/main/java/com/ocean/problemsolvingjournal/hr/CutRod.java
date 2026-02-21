@@ -1,4 +1,4 @@
-package hr.code.java;
+package com.ocean.problemsolvingjournal.hr;
 
 public class CutRod {
     public static void main(String[] args) {

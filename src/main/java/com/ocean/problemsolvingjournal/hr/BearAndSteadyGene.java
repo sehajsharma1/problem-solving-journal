@@ -1,4 +1,4 @@
-package hr.code.java;
+package com.ocean.problemsolvingjournal.hr;
 
 /*Genes can be represented as a string of length n (where n is divisible by 4), composed of the letters A, C, T, and G.
 

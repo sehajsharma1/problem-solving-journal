@@ -1,4 +1,4 @@
-package hr.code.java;
+package com.ocean.problemsolvingjournal.hr;
 
 import java.io.IOException;
 import java.util.*;

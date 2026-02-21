@@ -80,5 +80,8 @@ Suggested improvements
 - Return proper HTTP status codes for entry (e.g., 201 or 409) and change the leave endpoint to use POST for state changes.
 - Add unit tests for fare calculation (cover peak/non-peak and different sizes) and concurrency tests for parking.
 
+Links
+- https://bytebytego.com/courses/object-oriented-design-interview/design-a-parking-lot
+
 Contact / notes
 - This README is a quick reference — see individual classes in the package for implementation details and TODOs.

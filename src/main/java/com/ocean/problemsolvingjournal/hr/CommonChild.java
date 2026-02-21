@@ -1,4 +1,4 @@
-package hr.code.java;
+package com.ocean.problemsolvingjournal.hr;
 
 public class CommonChild {
     int lcs(String X, String Y, int m, int n) {

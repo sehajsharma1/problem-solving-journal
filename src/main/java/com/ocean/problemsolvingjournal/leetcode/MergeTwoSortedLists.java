@@ -1,4 +1,4 @@
-package leetcode.code.java;
+package com.ocean.problemsolvingjournal.leetcode;
 
 /*You are given the heads of two sorted linked lists list1 and list2.
 

@@ -1,11 +1,13 @@
-package leetcode.code.java;
-/*There are n children standing in a line. Each child is assigned a rating value given in the integer array ratings.
+package com.ocean.problemsolvingjournal.leetcode;
+/*
+There are n children standing in a line. Each child is assigned a rating value given in the integer array ratings.
 
 You are giving candies to these children subjected to the following requirements:
 
 Each child must have at least one candy.
 Children with a higher rating get more candies than their neighbors.
-Return the minimum number of candies you need to have to distribute the candies to the children.*/
+Return the minimum number of candies you need to have to distribute the candies to the children.
+*/
 public class Candy {
     public static void main(String[] args) {
         int[] candy = new int[]{100, 200, 300, 400, 500, 600, 11, 8, 6, 4, 3, 2};

@@ -1,4 +1,4 @@
-package leetcode.code.java;
+package com.ocean.problemsolvingjournal.leetcode;
 
 /*Given the root of a complete binary tree, return the number of the nodes in the tree.*/
 public class CountCompleteTreeNodes {

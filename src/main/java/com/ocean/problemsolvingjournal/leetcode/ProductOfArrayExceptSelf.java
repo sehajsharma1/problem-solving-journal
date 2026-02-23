@@ -1,4 +1,4 @@
-package leetcode.code.java;
+package com.ocean.problemsolvingjournal.leetcode;
 
 public class ProductOfArrayExceptSelf {
     public static void main(String[] args) {

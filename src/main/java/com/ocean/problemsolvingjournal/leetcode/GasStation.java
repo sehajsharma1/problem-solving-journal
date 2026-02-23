@@ -1,4 +1,4 @@
-package leetcode.code.java;
+package com.ocean.problemsolvingjournal.leetcode;
 
 public class GasStation {
     public static void main(String[] args) {

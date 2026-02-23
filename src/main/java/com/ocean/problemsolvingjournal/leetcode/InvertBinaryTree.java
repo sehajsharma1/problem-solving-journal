@@ -1,4 +1,4 @@
-package leetcode.code.java;
+package com.ocean.problemsolvingjournal.leetcode;
 
 /*Given the root of a binary tree, invert the tree, and return its root.
 Input: root = [4,2,7,1,3,6,9]

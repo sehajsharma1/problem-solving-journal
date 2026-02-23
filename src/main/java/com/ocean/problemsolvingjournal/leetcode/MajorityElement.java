@@ -1,4 +1,4 @@
-package leetcode.code.java;
+package com.ocean.problemsolvingjournal.leetcode;
 
 /*Given an array nums of size n, return the majority element.
 

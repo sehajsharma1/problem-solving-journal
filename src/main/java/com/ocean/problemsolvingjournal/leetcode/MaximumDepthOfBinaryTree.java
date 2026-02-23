@@ -1,4 +1,4 @@
-package leetcode.code.java;
+package com.ocean.problemsolvingjournal.leetcode;
 
 /*Given the root of a binary tree, return its maximum depth.
 

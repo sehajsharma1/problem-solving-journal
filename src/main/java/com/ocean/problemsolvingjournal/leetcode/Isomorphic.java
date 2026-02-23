@@ -1,4 +1,4 @@
-package leetcode.code.java;
+package com.ocean.problemsolvingjournal.leetcode;
 
 /*
 Given two strings s and t, determine if they are isomorphic.

@@ -46,6 +46,9 @@ Try → Recurse → Backtrack
 ```md
 ## 8 Directions in a 2D Grid
 
+int[] rowDir = {-1, -1, -1, 0, 0, 1, 1, 1};
+int[] colDir = {-1, 0, 1, -1, 1, -1, 0, 1};
+
 Each cell in a 2D array has 8 neighbors (horizontal, vertical, and diagonal).
 The direction arrays store relative row and column offsets: `-1` (up/left), `0` (same), `+1` (down/right).
 Combining these offsets gives all adjacent cells except the center `(0,0)`.

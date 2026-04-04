@@ -14,10 +14,10 @@ public class MergeIntervalsM {
 
     public static void main(String[] args) {
         int[][] intervals = {
-                {1, 3},
-                {15, 18},
-                {2, 6},
-                {8, 10}
+                {10,16},
+                {2,8},
+                {1,6},
+                {7,12}
 
         };
         int[][] intervalsV1 = {

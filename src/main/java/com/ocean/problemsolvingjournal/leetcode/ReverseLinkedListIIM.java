@@ -72,9 +72,9 @@ public class ReverseLinkedListIIM {
         printList(head);
 
         // Reverse between positions 2 and 8
-        head = obj.reverseBetween(head, 2, 8);
+        head = obj.reverseBetween(head, 4, 8);
 
-        System.out.println("List after reversing between 2 and 8:");
+        System.out.println("List after reversing between 4 and 8:");
         printList(head);
     }
 

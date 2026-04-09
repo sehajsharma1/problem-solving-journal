@@ -1,4 +1,4 @@
-package com.ocean.problemsolvingjournal.systemdesign.urlshortner.config;
+package com.ocean.problemsolvingjournal.systemdesign;
 
 import javax.sql.DataSource;
 
@@ -40,7 +40,7 @@ public class DataSourceConfig {
         // Apply minimal safe defaults only if not provided via application.yml
         // - Pool name: useful for metrics/logging. Set a recognizable default.
         if (ds.getPoolName() == null || ds.getPoolName().isEmpty()) {
-            ds.setPoolName("HikariPool-URLShortener");
+            ds.setPoolName("HikariPool-SD-DB");
         }
         // - Maximum pool size: avoid unbounded default of 0; choose a conservative default.
         if (ds.getMaximumPoolSize() == 0) {

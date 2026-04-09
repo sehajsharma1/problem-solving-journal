@@ -3,14 +3,13 @@ spring:
     ansi:
       enabled: ALWAYS
   datasource:
-    # Use HikariCP as the DataSource implementation
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://localhost:3306/urlshortener
-    username: urlusr
+    url: jdbc:mysql://localhost:3306/oceansddb
+    username: oceanusr
     password: hello123
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
-      pool-name: HikariPool-URLShortener
+      pool-name: HikariPool-OceanSdDb
       maximum-pool-size: 10
       minimum-idle: 2
       connection-timeout: 30000    # ms
@@ -27,7 +26,36 @@ spring:
     host: localhost
     port: 6379
 
+#  # Azure AD / OAuth2 client configuration for SSO
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          azure:
+#            client-id: 9b0834eb-c4a2-4d73-896b-2171d79b7e83
+#            client-secret: ${AZURE_CLIENT_SECRET:REPLACE_WITH_SECRET}
+#            client-name: Azure
+#            authorization-grant-type: authorization_code
+#            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+#            scope:
+#              - openid
+#              - profile
+#              - email
+#        provider:
+#          azure:
+#            issuer-uri: https://login.microsoftonline.com/4c1171ab-82f4-400a-8520-bf8a2a5a5a7e/v2.0
+
 server:
   port: 8080
 
+aws:
+  accessKey: AKIAQ2PW5OMAGLECR7OI
+  secretKey: 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
+  region: ap-south-1
+  s3:
+    bucket: sd-fs-bucket
 
+app:
+  security:
+    username: admin
+    password: 1234

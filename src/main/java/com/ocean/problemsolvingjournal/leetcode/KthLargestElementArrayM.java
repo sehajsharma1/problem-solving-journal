@@ -32,7 +32,6 @@ public class KthLargestElementArrayM {
 
         int n = nums.length;
 
-        // kth largest -> convert to kth smallest index
         int target = n - k;
 
         int left = 0, right = n - 1;
@@ -52,7 +51,6 @@ public class KthLargestElementArrayM {
         }
     }
 
-    // partition like quicksort
     private int partition(int[] arr, int left, int right) {
 
         int pivot = arr[right];
@@ -104,9 +102,8 @@ public class KthLargestElementArrayM {
 
     public static void main(String[] args) {
         KthLargestElementArrayM solver = new KthLargestElementArrayM();
-        // Default/example run
-        int[] nums = {5, 6, 3, 3, 3, 2, 1, 4};
-        int k = 2;
+        int[] nums = {85,100, 50, 90, 20, 40, 80,};
+        int k = 5;
         System.out.println("Example: nums = " + java.util.Arrays.toString(nums) + ", k = " + k
                 + " => " + solver.findKthLargestV1(nums, k));
     }

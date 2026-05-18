@@ -46,7 +46,7 @@ spring:
 #            issuer-uri: https://login.microsoftonline.com/4c1171ab-82f4-400a-8520-bf8a2a5a5a7e/v2.0
 
 server:
-  port: 8080
+  port: 8081
 
 aws:
   accessKey: AKIAQ2PW5OMAGLECR7OI

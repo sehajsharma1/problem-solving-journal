@@ -61,3 +61,17 @@ Kadane's Algorithm:
 Keep adding numbers while the sum is positive.
 If it becomes negative, restart — and remember the best sum found.
 ```
+```md
+Union-Find (Disjoint Set Union) is a data structure used to efficiently manage and track connected components in a graph. It supports two main operations: find (to identify the group of an element) and union (to merge two groups). With optimizations like path compression and union by rank/size, it achieves nearly constant time complexity. It is widely used in problems involving connectivity, cycle detection, and minimum spanning trees.
+```
+
+```md
+Kahn’s Algorithm is a BFS-based approach to perform Topological Sort using indegree.
+It processes nodes with indegree 0 and gradually removes dependencies from the graph.
+If all nodes are processed, the graph is acyclic; otherwise, a cycle exists.
+```
+```md
+Rule of DP (VERY IMPORTANT)
+If current state depends on future → go right → left
+If depends on past → go left → right
+```
